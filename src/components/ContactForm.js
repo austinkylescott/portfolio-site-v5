@@ -40,8 +40,9 @@ export default function ContactForm() {
       {formik => (
         <form
           name="contact-form"
-          netlify
+          data-netlify="true"
           className="contact-form"
+          action="POST"
           onSubmit={formik.handleSubmit}
         >
           <label htmlFor="name">Name</label>
