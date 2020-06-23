@@ -25,7 +25,7 @@ export default function ContactForm() {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact-demo", ...values }),
+          body: encode({ "form-name": "contact-form", ...values }),
         })
           .then(() => {
             alert("Success")
