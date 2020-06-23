@@ -65,7 +65,8 @@ p {
 .page-content {
   display: flex;
   flex-direction: column;
-
+  min-height: 80vh;
+  justify-content: space-between;
   padding: 2rem 2rem 2rem 2rem; // Bottom padding, same as footer height
 
   h1 {

@@ -3,6 +3,12 @@ import { Formik } from "formik"
 import * as Yup from "yup"
 
 export default function ContactForm() {
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
+
   return (
     <Formik
       initialValues={{ name: "", email: "", message: "" }}
@@ -15,12 +21,29 @@ export default function ContactForm() {
           .max(500, "Message is too long")
           .required("Required"),
       })}
-      onSubmit={values => {
-        alert(JSON.stringify(values, null, 2))
+      onSubmit={(values, actions) => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact-demo", ...values }),
+        })
+          .then(() => {
+            alert("Success")
+            actions.resetForm()
+          })
+          .catch(() => {
+            alert("Error")
+          })
+          .finally(() => actions.setSubmitting(false))
       }}
     >
       {formik => (
-        <form className="contact-form" onSubmit={formik.handleSubmit}>
+        <form
+          name="contact-form"
+          netlify
+          className="contact-form"
+          onSubmit={formik.handleSubmit}
+        >
           <label htmlFor="name">Name</label>
           <input id="name" {...formik.getFieldProps("name")} />
           {formik.touched.name && formik.errors.name ? (
