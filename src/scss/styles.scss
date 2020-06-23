@@ -1,0 +1,289 @@
+/************
+** FONTS ****
+************/
+$primary-font: "Roboto", "Courier New", Courier, monospace;
+$display-font: "RobotoMono", "Helvetica Neue", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  sans-serif;
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono/RobotoMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+/************
+** COLORS ***
+************/
+$black: #000;
+$white: #fff;
+$gray: #ebe6e6;
+$cyan: #5bc0eb;
+$yellow: #fde74c;
+$green: #9bc53d;
+$orange: #e55934;
+$main-color: $cyan;
+
+/************
+** STYLES ***
+************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $display-font;
+  font-size: 16px;
+}
+
+body {
+  background-color: $yellow;
+}
+
+p {
+  font-family: $primary-font;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem 2rem 2rem 2rem; // Bottom padding, same as footer height
+
+  h1 {
+    font-size: 5rem;
+  }
+  a {
+    color: black;
+  }
+}
+
+/************
+** BURGER ***
+************/
+
+.burger .burger-lines,
+.burger .burger-lines:after,
+.burger .burger-lines:before {
+  background-color: $black;
+}
+
+.burger.open .burger-lines,
+.burger.open .burger-lines:after,
+.burger.open .burger-lines:before {
+  background-color: $yellow !important;
+}
+
+.burger {
+  grid-area: "burger";
+  display: block;
+  font-size: 10px;
+  z-index: 99;
+  justify-self: right;
+}
+
+/*****************
+***** HEADER *****
+*****************/
+.Header {
+  padding: 1rem 2rem;
+  width: 100vw;
+  height: fit-content;
+
+  display: grid;
+  grid-template-areas:
+    "logo burger"
+    "nav nav";
+  position: sticky;
+  top: 0;
+  background-color: rgba($color: $yellow, $alpha: 0.9);
+}
+
+.logo {
+  grid-area: "logo";
+  font-size: 2rem;
+  text-decoration: none;
+  color: $black;
+}
+
+.navbar {
+  grid-area: "nav";
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+
+  left: -100vw;
+  transition: transform 0.5s, background-color 0.5s;
+
+  &.open {
+    display: grid;
+    transform: translateX(100vw);
+    background-color: $black;
+  }
+}
+
+.navbar a {
+  text-decoration: none;
+  position: relative;
+  color: $yellow;
+  font-family: $display-font;
+  font-weight: 800;
+  font-size: 4rem;
+  width: fit-content;
+
+  &::after {
+    content: "";
+    background-color: $yellow;
+    width: 0; // Changed on hover
+    height: 0.7rem;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: width 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+/****************
+***** CONTACT FORM *****
+*****************/
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-start;
+  width: 100%;
+  margin-top: 2rem;
+
+  .error {
+    color: red;
+  }
+  label,
+  button {
+    margin-top: 1rem;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: $display-font;
+    background-color: $black;
+    color: $yellow;
+    text-decoration: none;
+    border: none;
+  }
+  button:hover {
+    background-color: rgba($color: $black, $alpha: 0.7);
+  }
+  button:active {
+    background-color: $black;
+  }
+
+  input,
+  textarea {
+    background-color: $yellow;
+    padding: 1rem;
+    font-family: $display-font;
+    border: $black 2px solid;
+    width: 100%;
+  }
+  input {
+    font-size: 1.5rem;
+  }
+  textarea {
+    font-size: 1.5rem;
+    min-height: 400px;
+  }
+}
+
+/****************
+***** FOOTER *****
+*****************/
+
+.Footer {
+  // position: absolute;
+  bottom: 0;
+  height: 2rem; /* Footer height */
+  display: flex;
+  align-self: center;
+  margin-top: 2rem;
+}
+.Footer p {
+  font-size: 0.8rem;
+  margin: 0 auto;
+  font-family: $display-font;
+}
+
+@media (min-width: 640px) {
+  .contact-form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 80vw;
+  }
+  .Header {
+    grid-template-areas: "logo nav";
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .navbar {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: none;
+
+    height: unset;
+    position: inherit;
+    display: grid;
+    justify-content: space-between;
+    padding-top: 0;
+    a {
+      color: $black;
+      font-size: 1.2rem;
+      &::after {
+        background-color: $black;
+        height: 0.3rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1280px) {
+}

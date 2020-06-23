@@ -1,21 +1,25 @@
 import React from "react"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import Layout from "../components/Layout"
 import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import "../scss/styles.scss"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <h1>Hi, I'm Austin</h1>
+    <p>
+      I am a full-stack web developer and improv comedian based in Gainesville,
+      FL with an interest in building good looking and effective websites.
+    </p>
+    <p>
+      You can view check out <Link to="../projects">my projects</Link> here or{" "}
+      <Link to="https://www.github.com/austinkylescott">
+        view my github profile here
+      </Link>
+      .
+    </p>
+    <Footer />
   </Layout>
 )
 
