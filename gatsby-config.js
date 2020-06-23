@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        implementation: require("node-sass"),
+        implementation: require("sass"),
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
