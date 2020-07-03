@@ -12,7 +12,7 @@ const IndexPage = () => (
       FL with an interest in building good looking and effective websites.
     </p>
     <p>
-      You can view check out <Link to="../projects">my projects</Link> here or{" "}
+      You can view check out <Link to="../work">my projects</Link> here or{" "}
       <Link to="https://www.github.com/austinkylescott">
         view my github profile here
       </Link>

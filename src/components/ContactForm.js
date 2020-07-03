@@ -45,24 +45,28 @@ export default function ContactForm() {
           action="POST"
           onSubmit={formik.handleSubmit}
         >
-          <label htmlFor="name">Name</label>
-          <input id="name" {...formik.getFieldProps("name")} />
-          {formik.touched.name && formik.errors.name ? (
-            <div className="error">{formik.errors.name}</div>
-          ) : null}
+          <label htmlFor="name">
+            Name
+            <input id="name" {...formik.getFieldProps("name")} />
+            {formik.touched.name && formik.errors.name ? (
+              <div className="error">{formik.errors.name}</div>
+            ) : null}
+          </label>
+          <label htmlFor="email">
+            Email Address
+            <input id="email" {...formik.getFieldProps("email")} />
+            {formik.touched.email && formik.errors.email ? (
+              <div className="error">{formik.errors.email}</div>
+            ) : null}
+          </label>
 
-          <label htmlFor="email">Email Address</label>
-          <input id="email" {...formik.getFieldProps("email")} />
-          {formik.touched.email && formik.errors.email ? (
-            <div className="error">{formik.errors.email}</div>
-          ) : null}
-
-          <label htmlFor="message">Message</label>
-          <textarea id="message" {...formik.getFieldProps("message")} />
-          {formik.touched.message && formik.errors.message ? (
-            <div className="error">{formik.errors.message}</div>
-          ) : null}
-
+          <label htmlFor="message">
+            Message
+            <textarea id="message" {...formik.getFieldProps("message")} />
+            {formik.touched.message && formik.errors.message ? (
+              <div className="error">{formik.errors.message}</div>
+            ) : null}
+          </label>
           <button type="submit">Submit</button>
         </form>
       )}

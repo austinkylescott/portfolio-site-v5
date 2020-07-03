@@ -22,6 +22,7 @@ $white: #fff;
 $gray: #ebe6e6;
 $cyan: #5bc0eb;
 $yellow: #fde74c;
+$dark-yellow: #f2d602;
 $green: #9bc53d;
 $orange: #e55934;
 $main-color: $cyan;
@@ -70,7 +71,7 @@ p {
   padding: 2rem 2rem 2rem 2rem; // Bottom padding, same as footer height
 
   h1 {
-    font-size: 5rem;
+    font-size: 3.3rem;
   }
   a {
     color: black;
@@ -192,6 +193,7 @@ p {
 
   label {
     font-size: 1.2rem;
+    width: 100%;
   }
 
   button {
@@ -245,9 +247,33 @@ p {
   font-family: $display-font;
 }
 
+/************************
+***** PROJECT CONTAINER *
+************************/
+.project-container {
+  display: grid;
+  gap: 3rem;
+  width: 100%;
+}
+.project-card {
+  background-color: $yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/************************
+***** MEDIA QUERIES *****
+*************************/
 @media (min-width: 640px) {
   .contact-form {
-    width: 80%;
+    width: 100%;
+  }
+
+  .page-container {
+    h1 {
+      font-size: 5rem;
+    }
   }
 }
 
@@ -284,7 +310,13 @@ p {
 }
 
 @media (min-width: 1024px) {
+  .project-container {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 @media (min-width: 1280px) {
+  .project-container {
+    grid-template-columns: repeat(3, auto);
+  }
 }
