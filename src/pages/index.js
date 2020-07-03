@@ -8,11 +8,12 @@ const IndexPage = () => (
   <Layout>
     <h1>Hi, I'm Austin</h1>
     <p>
-      I am a full-stack web developer and improv comedian based in Gainesville,
-      FL with an interest in building good looking and effective websites.
+      I am a full-stack web developer and improvisational theater teacher based
+      in Gainesville, FL with an interest in building good looking and effective
+      websites.
     </p>
     <p>
-      You can view check out <Link to="../work">my projects</Link> here or{" "}
+      You can check out <Link to="../work">my projects here</Link> or{" "}
       <Link to="https://www.github.com/austinkylescott">
         view my github profile here
       </Link>

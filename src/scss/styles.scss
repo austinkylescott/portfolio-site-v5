@@ -55,6 +55,7 @@ p {
 
 .container {
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 .page-container {
@@ -67,8 +68,8 @@ p {
   display: flex;
   flex-direction: column;
   min-height: 80vh;
-  justify-content: space-between;
-  padding: 2rem 2rem 2rem 2rem; // Bottom padding, same as footer height
+  //justify-content: space-between;
+  padding: 2rem 2rem 5rem 2rem; // Bottom padding, same as footer height
 
   h1 {
     font-size: 3.3rem;
@@ -234,7 +235,7 @@ p {
 *****************/
 
 .Footer {
-  // position: absolute;
+  position: absolute;
   bottom: 0;
   height: 2rem; /* Footer height */
   display: flex;
@@ -260,6 +261,10 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  p {
+    font-size: 1rem;
+  }
 }
 
 /************************
