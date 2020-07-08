@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Footer from "../components/Footer"
+import Icon from "../components/Icon"
 
-export default function about() {
+export default function Work() {
   return (
     <Layout>
       <h1>Work</h1>
@@ -17,11 +18,10 @@ export default function about() {
             A React app with a custom API and back end complete with mySQL
             database.
           </p>
-          <div>
-            <img
-              src="https://via.placeholder.com/50x50"
-              alt="technology icon"
-            />
+          <h4>Technologies Used</h4>
+          <div class="technologies">
+            <Icon name="html5" />
+            <Icon name="bootstrap" />
             <img
               src="https://via.placeholder.com/50x50"
               alt="technology icon"
