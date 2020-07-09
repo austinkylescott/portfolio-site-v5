@@ -267,7 +267,7 @@ p {
   }
 
   .technologies {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
   }
@@ -279,8 +279,10 @@ p {
   }
 
   .techIcon {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.5em;
+    width: 1.5em;
+    // height: 50px;
+    // width: 50px;
   }
 }
 
