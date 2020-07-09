@@ -1,8 +1,9 @@
 import React from "react"
-import HTML5logo from "../icons/html5.svg"
+import HTML5Logo from "../icons/html5.svg"
 import BootstrapLogo from "../icons/bootstrap.svg"
+import CSS3Logo from "../icons/css3.svg"
 
-const iconTypes = { html5: HTML5logo, bootstrap: BootstrapLogo }
+const iconTypes = { html5: HTML5Logo, bootstrap: BootstrapLogo, css3: CSS3Logo }
 
 const IconComponent = ({ name, ...props }) => {
   let Icon = iconTypes[name]
