@@ -117,7 +117,7 @@ p {
     "nav nav";
   position: sticky;
   top: 0;
-  background-color: rgba($color: $yellow, $alpha: 0.9);
+  background-color: rgba($color: $yellow, $alpha: 1);
 }
 
 .logo {
@@ -253,15 +253,23 @@ p {
 ************************/
 .project-container {
   display: grid;
-  gap: 3rem;
+  gap: 1rem;
   width: 100%;
 }
 .project-card {
   background-color: $yellow;
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
   justify-content: space-around;
 
+  h2 {
+    margin-bottom: 2rem;
+  }
+  img {
+    object-fit: contain;
+    overflow: hidden;
+  }
   p {
     font-size: 1rem;
   }
@@ -269,18 +277,19 @@ p {
   .technologies {
     width: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   h4 {
     font-size: 1rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .techIcon {
     height: 1.5rem;
     width: 1.5rem;
+    margin-right: 0.5rem;
   }
 }
 
