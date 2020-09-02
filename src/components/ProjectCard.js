@@ -13,8 +13,8 @@ export default function ProjectCard(props) {
   return (
     <div className="project-card">
       <h2>{props.name}</h2>
-      {/* <img alt="thumbnail of project" src={props.thumbnail} /> */}
-      <img alt="thumbnail of project" src={`${props.thumbnail}`} />
+
+      <img alt="thumbnail of project" src={props.thumbnail} />
       {console.log(props.thumbnail)}
       <p>{props.desc}</p>
       <div className="project-links">

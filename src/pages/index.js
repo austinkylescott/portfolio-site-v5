@@ -14,9 +14,9 @@ const IndexPage = () => (
     </p>
     <p>
       You can check out <Link to="../work">my projects here</Link> or{" "}
-      <Link to="https://www.github.com/austinkylescott">
+      <a href="https://www.github.com/austinkylescott">
         view my github profile here
-      </Link>
+      </a>
       .
     </p>
     <Footer />

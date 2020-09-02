@@ -7,7 +7,7 @@
       "technologies": ["html", "css", "javascript"],
       "live_link": "https://austinkylescott.github.io/techdegree-project-1/a_random_quote_generator-v1",
       "github_link": "https://github.com/austinkylescott/techdegree-project-1",
-      "thumbnail": "../images/projectImages/project0/project0_thumb.png",
+      "thumbnail": "/projectImages/project0/project0_thumb.png",
       "image_urls": [
         "/static/images/project0/project0_img0.png",
         "/static/images/project0/project0_img1.png",
@@ -21,7 +21,7 @@
       "technologies": ["html", "css", "javascript", "bootstrap"],
       "live_link": "https://austinkylescott.github.io/techdegree-project-2/list_pagination_and_filtering-v1",
       "github_link": "https://github.com/austinkylescott/techdegree-project-2",
-      "thumbnail": "/static/images/project1/project1_thumb.png",
+      "thumbnail": "/projectImages/project1/project1_thumb.png",
       "image_urls": [
         "/static/images/project1/project1_img1.png",
         "/static/images/project1/project1_img2.png",
@@ -35,7 +35,7 @@
       "technologies": ["html", "css", "javascript"],
       "live_link": "https://austinkylescott.github.io/techdegree-project-3/interactive-form-v1",
       "github_link": "https://github.com/austinkylescott/techdegree-project-3",
-      "thumbnail": "/static/images/project2/project2_thumb.png",
+      "thumbnail": "/projectImages/project2/project2_thumb.png",
       "image_urls": [
         "/static/images/project2/project2_img0.png",
         "/static/images/project2/project2_img1.png",
@@ -49,7 +49,7 @@
       "technologies": ["html", "css", "javascript"],
       "live_link": "https://austinkylescott.github.io/techdegree-project-4/oop_game-v2",
       "github_link": "https://github.com/austinkylescott/techdegree-project-4",
-      "thumbnail": "/static/images/project3/project3_thumb.png",
+      "thumbnail": "/projectImages/project3/project3_thumb.png",
       "image_urls": [
         "/static/images/project3/project3_img0.png",
         "/static/images/project3/project3_img1.png",
@@ -64,7 +64,7 @@
       "technologies": ["html", "css", "javascript"],
       "live_link": "https://austinkylescott.github.io/techdegree-project-5/public_api_request-v1",
       "github_link": "https://github.com/austinkylescott/techdegree-project-5",
-      "thumbnail": "/static/images/project4/project4_thumb.png",
+      "thumbnail": "/projectImages/project4/project4_thumb.png",
       "image_urls": [
         "/static/images/project4/project4_img0.png",
         "/static/images/project4/project4_img1.png",
