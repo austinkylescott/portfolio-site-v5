@@ -13,15 +13,20 @@ export default function ProjectCard(props) {
   return (
     <div className="project-card">
       <h2>{props.name}</h2>
-
       {/* <img alt="thumbnail of project" src={props.thumbnail} /> */}
-      <img
-        alt="thumbnail of project"
-        src="https://via.placeholder.com/300x200"
-      />
+      <img alt="thumbnail of project" src={`${props.thumbnail}`} />
+      {console.log(props.thumbnail)}
+      <p>{props.desc}</p>
+      <div className="project-links">
+        <a className="button" href={props.github}>
+          Github
+        </a>
+        <a className="button" href={props.liveLink}>
+          Live Link
+        </a>
+      </div>
 
-      <div>
-        <p>{props.desc}</p>
+      <div className="technology">
         <h4>Technologies Used</h4>
         <div className="technologies">{techIcons}</div>
       </div>

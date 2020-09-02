@@ -253,37 +253,44 @@ p {
 ************************/
 .project-container {
   display: grid;
-  gap: 1rem;
+  column-gap: 1rem;
   width: 100%;
 }
 .project-card {
   background-color: $yellow;
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr) auto;
+  align-items: center;
 
   h2 {
-    margin-bottom: 2rem;
-  }
-  img {
-    object-fit: contain;
-    overflow: hidden;
-  }
-  p {
-    font-size: 1rem;
-  }
-
-  .technologies {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+    align-self: center;
   }
 
   h4 {
     font-size: 1rem;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  .project-links {
+    margin-top: 1rem;
+  }
+  .button {
+    background-color: $black;
+    padding: 1rem;
+    color: $yellow;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+
+  //TECHNOLOGY SECTION
+  .technologies {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .techIcon {

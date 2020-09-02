@@ -12,6 +12,8 @@ export default function ProjectContainer() {
         desc={project.description}
         technologies={project.technologies}
         thumbnail={project.thumbnail}
+        github={project.github_link}
+        liveLink={project.live_link}
       />
     )
   })
