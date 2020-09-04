@@ -2,9 +2,6 @@ import React from "react"
 import IconComponent from "../components/Icon"
 
 export default function ProjectCard(props) {
-  // const techIcons = props.technologies.map((tech, index) => {
-  //   return <Icon name={tech} key={index} />
-  // })
   const techIcons = props.technologies.map((tech, index) => {
     console.log(tech)
     return <IconComponent name={tech} key={index} />
@@ -14,7 +11,9 @@ export default function ProjectCard(props) {
     <div className="project-card">
       <h2>{props.name}</h2>
 
-      <img alt="thumbnail of project" src={props.thumbnail} />
+      <a href={props.liveLink} target="__blank">
+        <img alt="thumbnail of project" src={props.thumbnail} />
+      </a>
       {console.log(props.thumbnail)}
       <p>{props.desc}</p>
       <div className="project-links">

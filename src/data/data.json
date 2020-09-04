@@ -71,6 +71,24 @@
         "/static/images/project4/project4_img2.png",
         "/static/images/project4/project4_img3.png"
       ]
+    },
+    {
+      "id": 5,
+      "project_name": "React Flickr Gallery",
+      "description": "A lightweight gallery app built using React. Enjoy photos from preset search keywords or search for your own. The project was bootstrapped with Create-React-App and hosted with manual deploys to Netlify.",
+      "technologies": ["html", "css", "javascript", "react", "node"],
+      "live_link": "https://ascott-react-gallery.netlify.app",
+      "github_link": "https://github.com/austinkylescott/react-gallery-app_v1",
+      "thumbnail": "https://via.placeholder.com/300x200"
+    },
+    {
+      "id": 6,
+      "project_name": "SQL Library Manager",
+      "description": "A lightweight gallery app built using React. Enjoy photos from preset search keywords or search for your own. The project was bootstrapped with Create-React-App and hosted with manual deploys to Netlify.",
+      "technologies": ["html", "css", "javascript", "react", "node", "heroku"],
+      "live_link": "https://ascott-react-gallery.netlify.app",
+      "github_link": "https://github.com/austinkylescott/sql_library_manager-v1",
+      "thumbnail": "https://via.placeholder.com/300x200"
     }
   ]
 }
