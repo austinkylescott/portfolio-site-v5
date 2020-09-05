@@ -12,6 +12,7 @@ export default function Layout(props) {
           name="description"
           content="Austin Scott is a talented full stack web developer available for hire. This is his portfolio of HTML, CSS, Javascript, and React projects. Contact him to discuss a job or project. He wants to work with you."
         />
+        <link rel="canonical" href="https://www.austinscott.dev" />
         <title>Austin Scott, Web Developer</title>
       </Helmet>
       <Header />
