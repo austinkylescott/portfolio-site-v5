@@ -254,22 +254,19 @@ p {
 .project-container {
   display: grid;
   column-gap: 1rem;
+  row-gap: 2rem;
   width: 100%;
 }
 .project-card {
   background-color: $yellow;
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr 1fr auto;
+  grid-template-rows: minmax(100px, 1fr) auto 1fr 1fr auto;
   align-items: center;
 
   img {
     height: 200px;
     width: 300px;
     border: 2px solid $black;
-  }
-
-  h2 {
-    align-self: center;
   }
 
   h4 {
@@ -283,12 +280,24 @@ p {
   }
   .project-links {
     margin-top: 1rem;
+    display: flex;
   }
   .button {
     background-color: $black;
     padding: 1rem;
     color: $yellow;
     text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .link-icon {
+    fill: $yellow;
+    height: 1.5rem;
+    margin-right: 1rem;
+  }
+  .code-icon {
     margin-right: 1rem;
   }
 

@@ -7,16 +7,24 @@ import JqueryLogo from "../icons/jquery.svg"
 import ReactLogo from "../icons/reactJS.svg"
 import NodeLogo from "../icons/node-dot-js.svg"
 import HerokuLogo from "../icons/heroku.svg"
+import NetlifyLogo from "../icons/netlify.svg"
+import GithubLogo from "../icons/github.svg"
+import ExpressLogo from "../icons/expressjs.svg"
+import SQLiteLogo from "../icons/sqlite.svg"
 
 const iconTypes = {
   html: HTML5Logo,
   bootstrap: BootstrapLogo,
   css: CSSLogo,
   javascript: JavaScriptLogo,
-  jquery: JqueryLogo,
   react: ReactLogo,
   node: NodeLogo,
   heroku: HerokuLogo,
+  netlify: NetlifyLogo,
+  github: GithubLogo,
+  jquery: JqueryLogo,
+  express: ExpressLogo,
+  sqlite: SQLiteLogo,
 }
 
 const IconComponent = ({ name, ...props }) => {

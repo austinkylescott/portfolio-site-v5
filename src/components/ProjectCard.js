@@ -17,11 +17,12 @@ export default function ProjectCard(props) {
       {console.log(props.thumbnail)}
       <p>{props.desc}</p>
       <div className="project-links">
-        <a className="button" href={props.github}>
+        <a className="button" target="__blank" href={props.github}>
+          <IconComponent className="link-icon" name={"github"} />
           Github
         </a>
-        <a className="button" href={props.liveLink}>
-          Live Link
+        <a className="button" target="__blank" href={props.liveLink}>
+          <div className="code-icon">{"</>"}</div> Live
         </a>
       </div>
 
