@@ -51,6 +51,9 @@ p {
   font-family: $primary-font;
   font-size: 1.5rem;
   margin-top: 2rem;
+  a {
+    display: inline-block;
+  }
 }
 
 .container {

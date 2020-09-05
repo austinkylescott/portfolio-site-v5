@@ -7,23 +7,45 @@ export default function about() {
     <Layout>
       <h1>About Me</h1>
       <p>
-        Over time I've had a lot of different interests but there are two things
-        that have been constant throughout my life: a love for improvisational
-        theater and deep interest in technology.
+        I'm a Rochester, NY native now living in Gainesville, FL. Despite just
+        recently beginning my career in web development, coding has been a
+        constant throughout my life. I originally learned Java in high school.
+        Then, I attended Rochester Institute of technology and spent my first 3
+        years of college studying Game Design & Development.
       </p>
       <p>
-        I was exposed to both during my high school days and was able to bring
-        improv comedy into my working adult life as a paid teacher and coach
-        here in Gainesville, FL. I now seek to do transition into a web
-        development career.
+        Oddly, my interests took a wild shift. I switched majors entirely and
+        went on to graduate with a degree in Advertising & Public Relations.
+        Since graduating, I went on to work in all kinds of fields, including
+        retail management, faculty recruitment, and human resources. I realized
+        and that in Digital Age, every job involves working at a computer and{" "}
+        <strong>
+          <em>
+            I enjoyed my time a lot more back when I was telling it what to do
+          </em>
+        </strong>{" "}
+        instead of writing papers and reports.
       </p>
       <p>
-        I enjoy being on the cutting edge and keeping up with technology as it
-        changes. Fortunately, my previous professional work experience in retail
-        management, faculty recruitment, and human resources has instilled the
-        importance of balancing doing the coolest or trendiest things with doing
-        what's most important: giving the customer the product they want as
-        quickly as possible.
+        I decided to return to programming, which was my original passion and
+        had much better long term career prospects. I signed up with{" "}
+        <a href="https://www.teamtreehouse.com" target="__blank">
+          Team Treehouse
+        </a>{" "}
+        and completed their Full Stack JavaScript Techdegree program.
+      </p>
+      <p>
+        Outside of work, under normal circumstances, you might find me teaching
+        an improvisational theater class or performing in comedy shows with my
+        group,{" "}
+        <a href="https://www.hitheater.com" target="__blank">
+          House Improv
+        </a>
+        . Lately, I've just been home enjoying my puppy and playing lots of
+        video games!
+      </p>
+      <p>
+        I can't wait to talk to you about working as your next web developer.
       </p>
 
       <Footer />
