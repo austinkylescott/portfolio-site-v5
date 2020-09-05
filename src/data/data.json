@@ -1,9 +1,27 @@
 {
   "projects": [
     {
+      "id": 7,
+      "project_name": "Full Stack Course Manager",
+      "description": "Full stack application created with a React client hosted on Netlify for the front end and a REST API and SQLite database hosted on Heroku complete with entry validation and user authentication on the backend. Please allow a few seconds for the Heroku dyno to wake up.",
+      "technologies": [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "node",
+        "sqlite",
+        "netlify",
+        "heroku"
+      ],
+      "live_link": "https://zen-wiles-0cc089.netlify.app/",
+      "github_link": "https://github.com/austinkylescott/react-rest-api",
+      "thumbnail": "/projectImages/project7/project7_thumb.png"
+    },
+    {
       "id": 6,
       "project_name": "SQL Library Manager",
-      "description": "A library manager that allows the user to view the library catalogue and add & remove books. The app is built with Express and uses Sequelize ORM to manage a SQLite database. The database is hosted on Heroku.",
+      "description": "A library manager that allows the user to view the library catalogue and add & remove books. The app is built with Express and uses Sequelize ORM to manage a SQLite database. The database is hosted on Heroku. Please allow a few seconds for the Heroku dyno to wake up.",
       "technologies": [
         "html",
         "css",
