@@ -5,7 +5,7 @@ import "../scss/styles.scss"
 
 export default function Layout(props) {
   return (
-    <div className="container page-container">
+    <>
       <Helmet>
         <meta charSet="utf-8" />
         <meta
@@ -15,11 +15,13 @@ export default function Layout(props) {
         <link rel="canonical" href="https://www.austinscott.dev" />
         <title>Austin Scott, Web Developer</title>
       </Helmet>
-      <Header />
-      <div className="page-content">
-        {props.children}
-        {/* <Footer /> */}
+      <div className="container page-container">
+        <Header />
+        <div className="page-content">
+          {props.children}
+          {/* <Footer /> */}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
