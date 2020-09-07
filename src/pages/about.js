@@ -17,8 +17,9 @@ export default function about() {
         Oddly, my interests took a wild shift. I switched majors entirely and
         went on to graduate with a degree in Advertising & Public Relations.
         Since graduating, I went on to work in all kinds of fields, including
-        retail management, faculty recruitment, and human resources. I realized
-        and that in Digital Age, every job involves working at a computer and{" "}
+        retail management, faculty recruitment, and human resources. One thing I
+        realized was that in the Digital Age, every job involves working at a
+        computer and{" "}
         <strong>
           <em>
             I enjoyed my time a lot more back when I was telling it what to do
