@@ -27,7 +27,7 @@ export default function ProjectCard(props) {
       </div>
 
       <div className="technology">
-        <h4>Technologies Used</h4>
+        <h3>Technologies Used</h3>
         <div className="technologies">{techIcons}</div>
       </div>
     </div>
